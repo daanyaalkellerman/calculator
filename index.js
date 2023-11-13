@@ -1,0 +1,41 @@
+let btn1 = document.querySelector('[data-1]')
+let btn2 = document.querySelector('[data-2]')
+let btn3 = document.querySelector('[data-3]')
+let btn4 = document.querySelector('[data-4]')
+let btn5 = document.querySelector('[data-5]')
+let btn6 = document.querySelector('[data-6]')
+let btn7 = document.querySelector('[data-7]')
+let btn8 = document.querySelector('[data-8]')
+let btn9 = document.querySelector('[data-9]')
+let btn0 = document.querySelector('[data-0]')
+let btnPlus = document.querySelector('[data-plus]')
+let btnMinus = document.querySelector('[data-minus]')
+let btnTimes = document.querySelector('[data-times]')
+let btnDivide = document.querySelector('[data-divide]')
+let btnEqual = document.querySelector('[data-equal]')
+let btnAC = document.querySelector('[data-all-clear]')
+btn1.addEventListener('click',()=> addValue(btn1.value))
+btn2.addEventListener('click',()=> addValue(btn2.value))
+btn3.addEventListener('click',()=> addValue(btn3.value))
+btn4.addEventListener('click',()=> addValue(btn4.value))
+btn5.addEventListener('click',()=> addValue(btn5.value))
+btn6.addEventListener('click',()=> addValue(btn6.value))
+btn7.addEventListener('click',()=> addValue(btn7.value))
+btn8.addEventListener('click',()=> addValue(btn8.value))
+btn9.addEventListener('click',()=> addValue(btn9.value))
+btn0.addEventListener('click',()=> addValue(btn0.value))
+btnPlus.addEventListener('click',()=> addValue(btnPlus.value))
+btnMinus.addEventListener('click',()=> addValue(btnMinus.value))
+btnDivide.addEventListener('click',()=> addValue(btnDivide.value))
+btnTimes.addEventListener('click',()=> addValue(btnTimes.value))
+btnEqual.addEventListener('click',()=>equal(display.value))
+btnAC.addEventListener('click',()=> addValue(btnAC.value))
+
+function addValue(value){
+    display.value += value
+}
+let display = document.querySelector('[data-answer]')
+
+function equal(value){
+    display.value = eval(value)
+}

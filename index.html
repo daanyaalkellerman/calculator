@@ -7,39 +7,48 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <table id="calculator"> 
-        <tr> 
-            <td colspan="3"> 
-                <input type="text" id="result"> 
-            </td> 
-            <td><input type="button" value="c"></td> 
-        </tr> 
-  
-        <tr> 
-            <td><input type="button" value="1"></td> 
-            <td><input type="button" value="2"></td> 
-            <td><input type="button" value="3"></td> 
-            <td><input type="button" value="/"></td> 
-        </tr> 
-        <tr> 
-            <td><input type="button" value="4"></td> 
-            <td><input type="button" value="5"></td> 
-            <td><input type="button" value="6"></td> 
-            <td><input type="button" value="*"></td> 
-        </tr> 
-        <tr> 
-            <td><input type="button" value="7"></td> 
-            <td><input type="button" value="8"></td> 
-            <td><input type="button" value="9"></td> 
-            <td><input type="button" value="-"></td> 
-        </tr> 
-        <tr> 
-            <td><input type="button" value="0"></td> 
-            <td><input type="button" value="."></td> 
-            <td><input type="button" value="="></td> 
-            <td><input type="button" value="+"></td> 
-        </tr> 
-    </table> 
     
+    <table id="calculator" >
+    <tr class="output">
+        <td colspan="3"> 
+            <input type="text" id="result" data-answer> </td>
+            <td><button class="butt" data-all-clear>AC</button></td>
+        </tr>
+        
+        <tr>
+            <td><button class="butt" data-1 value="1">1</button></td> 
+            <td><button class="butt" data-2 value="2">2</button></td>
+            <td><button class="butt" data-3 value="3">3</button></td>
+            <td><button class="butt" data-divide value="/">/</button></td>
+        </tr>
+        
+        <tr>
+            <td><button class="butt" data-4 value="5">4</button></td>
+            <td><button class="butt" data-5 value="5">5</button></td>
+            <td><button class="butt" data-6 value="6">6</button></td>
+            <td><button class="butt" data-times value="*">*</button></td>
+        </tr>
+        <tr >
+            <td><button class="butt" data-7 value="7">7</button></td>
+            <td><button class="butt" data-8 value="8">8</button></td>
+            <td><button class="butt" data-9 value="9">9</button></td>
+            <td><button class="butt" data-minus value="-">-</button></td>
+            
+        </tr>
+        <tr>
+            
+            <td><button class="butt" data-0 value="0">0</button></td>
+            <td><button class="butt" data-dot value=".">.</button></td>
+            <td><button class="butt" data-equal>=</button></td>
+            <td  data-+><button class="butt" value="+" data-plus>+</button></td>  
+            
+            
+        </tr>
+        
+        
+    </table>
+    
+    
+    <script src="/index.js"></script>
 </body>
 </html>

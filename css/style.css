@@ -1,27 +1,33 @@
+body{
+    background-color: black;
+}
+
 table { 
-    border: 4px solid black;
-    background: black; 
+    border: 2px solid rgb(255, 255, 255);
+    background: rgb(49, 44, 44); 
     margin-left: auto; 
-    margin-right: auto; 
+    margin-right: auto; ;
 } 
   
-input[type="button"] { 
+.butt{ 
     width: 100%; 
-    padding: 15px 35px; 
-    background-color: purple; 
+    padding: 20px 30px; 
+    background-color: orangered; 
     color: black; 
     font-size: 20px; 
     font-weight: bold; 
     border: none; 
-    border-radius: 6px; 
+    border-radius: 9px; 
+    cursor: pointer;
 } 
   
 input[type="text"] { 
-    background-color: grey;
+    background-color: rgb(224, 221, 221);
     padding: 20px 55px; 
-    font-size: 23x; 
+    font-size: 23px; 
     font-weight: bold; 
     border: none; 
     border-radius: 6px; 
-    border: 2px solid black; 
+    border: 2px solid black;
+ 
 } 
